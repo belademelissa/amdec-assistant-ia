@@ -1,0 +1,25 @@
+[project]
+name = "amdec-assistant-ia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sarahm868", email = "sarah.M'nasri@Skconsultinggroup-france.fr" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "mistralai>=3.9.0",
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.1",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.3.0",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+amdec-assistant-ia = "amdec_assistant_ia:main"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
